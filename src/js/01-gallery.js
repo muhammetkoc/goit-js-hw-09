@@ -112,6 +112,7 @@ gallery.addEventListener('click', (e) => {
   instance.show();
   document.addEventListener('keydown', onEscPress);
 
+  
   instance.element().addEventListener('basiclightbox:close', () => {
     document.removeEventListener('keydown', onEscPress);
   });

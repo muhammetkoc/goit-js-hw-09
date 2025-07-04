@@ -11,6 +11,7 @@ const savedState = localStorage.getItem(STORAGE_KEY);
 if (savedState) {
   const parsedState = JSON.parse(savedState);
 
+  
   if (parsedState.email) {
     formEl.elements.email.value = parsedState.email.trim();
     formState.email = parsedState.email.trim();
